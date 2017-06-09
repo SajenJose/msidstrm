@@ -1,0 +1,29 @@
+<div class="wikidoc">
+<p>This utility lists / modifies the various data streams present in a Windows Installer Database (MSI Files). We can read the various data streams from the _Streams table inside the Windows Installer Database. Apart from the MSI Capabilities, this utility
+ also comes with some small goodies like GUID Conversion into squished format and vice versa, cab file operations and also find the file / directory path size or length.</p>
+<p>Usage:</p>
+<p>-: Read Data Streams: msidstrm.exe &lt;msifilename&gt;.msi</p>
+<p>-: Add Data Streams: msidstrm.exe /a &lt;msifilename&gt;.msi &lt;newfile&gt;.ext</p>
+<p>-: Delete Data Streams: msidstrm.exe /d &lt;msifilename&gt;.msi &lt;datastream name&gt;</p>
+<p>-: Extract Data Streams: msidstrm.exe /eas &lt;msifilename&gt;.msi</p>
+<p>-: Extract Files: msidstrm.exe /eaf &lt;msifilename&gt;.msi</p>
+<p>-: Convert GUID: msidstrm.exe /guid [N/P/B/D] {guid}</p>
+<p>-: Process Cab Files: msidstrm.exe [/lcab | /ccab | /ecab] &lt;cabfilename&gt; &lt;directory&gt;</p>
+<p>-: Get File Path Length: msidstrm.exe /gfp &quot;&lt;path / directory - to search&gt;&quot;</p>
+<p>-: Get CPU Arch: msidstrm.exe /cpu</p>
+<p>&nbsp;</p>
+<p>Options:</p>
+<p>/a - Add a data stream to the msi file</p>
+<p>/anb - Add a data stream to the msi file, without backing up the original msi file</p>
+<p>/d - Delete a data stream from the msi file</p>
+<p>/dnb - Delete a data stream from the msi file, without backing up the original msi file</p>
+<p>/eas - Extract all streams and table information from the msi file</p>
+<p>/eaf - Extract all files from the mi file</p>
+<p>/guid - Converts GUID to compressed / packed / squished and vice versa</p>
+<p>/lcab - Lists cab file contents</p>
+<p>/ccab - Creates a cab file from the contents of the specified directory</p>
+<p>/ecab - Extracts the files from the cab file</p>
+<p>/gfp - Lists or Saves the Files and Folder Path Size / Length into a comma separated file.</p>
+<p>/cpu - Gets the CPU Architecture like 32-bit or 64-bit</p>
+<p>/? - Displays the help / usage message</p>
+</div><div class="ClearBoth"></div>
